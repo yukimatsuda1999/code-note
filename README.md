@@ -1,2 +1,2 @@
 # Bioinfolog
-Subscribbles of bioinformatics commandline tools.
+Scribbles of usage for bioinformatics commandline tools.
