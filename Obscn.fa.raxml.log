@@ -1,0 +1,29 @@
+
+RAxML-NG v. 1.1-master released on 29.11.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz, 3 cores, 32 GB RAM
+
+RAxML-NG was called at 17-Nov-2022 19:54:20 as follows:
+
+raxml-ng --msa Obscn.fa --all --model GTR+G --bs-trees 100 --threads 2
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: 100
+  random seed: 1668682460
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (2 threads), thread pinning: OFF
+
+
+ERROR: Alignment file not found: Obscn.fa
+
