@@ -1,0 +1,82 @@
+
+RAxML-NG v. 1.1-master released on 29.11.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz, 3 cores, 32 GB RAM
+
+RAxML-NG was called at 17-Nov-2022 16:22:28 as follows:
+
+raxml-ng --msa Obscn.fa --evaluate --tree Constrained.nwk --model GTR+G --threads 2
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1668669748
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (2 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: Obscn.fa
+[00:00:00] Loaded alignment with 9 taxa and 11922 sites
+
+Alignment comprises 1 partitions and 1426 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 11922 / 1426
+Gaps: 11.55 %
+Invariant sites: 64.66 %
+
+
+NOTE: Binary MSA file created: Obscn.fa.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 2 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: Constrained.nwk
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 713 / 11408
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -49165.978861
+
+[00:00:00 -49165.978861] Initial branch length optimization
+[00:00:00 -44163.099574] Model parameter optimization (eps = 0.100000)
+
+[00:00:00] Tree #1, final logLikelihood: -42308.503918
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.375765 (ML),  weights&rates: (0.250000,0.013379) (0.250000,0.163434) (0.250000,0.703665) (0.250000,3.119523) 
+   Base frequencies (ML): 0.202953 0.289608 0.331471 0.175968 
+   Substitution rates (ML): 1.456680 4.829757 1.608572 0.710262 7.310768 1.000000 
+
+
+Final LogLikelihood: -42308.503918
+
+AIC score: 84665.007835 / AICc score: 84665.108701 / BIC score: 84842.275213
+Free parameters (model + branch lengths): 24
+
+WARNING: Best ML tree contains 1 near-zero branches!
+
+Best ML tree with collapsed near-zero branches saved to: /Users/yukimatsuda/Desktop/raxml-ng/constrainedTreeSearch/Obscn.fa.raxml.bestTreeCollapsed
+Best ML tree saved to: /Users/yukimatsuda/Desktop/raxml-ng/constrainedTreeSearch/Obscn.fa.raxml.bestTree
+Optimized model saved to: /Users/yukimatsuda/Desktop/raxml-ng/constrainedTreeSearch/Obscn.fa.raxml.bestModel
+
+Execution log saved to: /Users/yukimatsuda/Desktop/raxml-ng/constrainedTreeSearch/Obscn.fa.raxml.log
+
+Analysis started: 17-Nov-2022 16:22:28 / finished: 17-Nov-2022 16:22:28
+
+Elapsed time: 0.110 seconds
+
